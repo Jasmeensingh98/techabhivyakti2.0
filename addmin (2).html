@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image" href="ox.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="addmin.css">
+</head>
+
+<body>
+    <h1>Bigg Boss Voting</h1>
+    <div class="png">
+        <img src="eye.jpg" height="30%">
+    </div>
+    <div class="detail">
+        <p> <strong>Bigg Boss</strong> is a popular reality television show that originated in the Netherlands
+            and has been adapted in various countries, including India. The Indian version of Bigg Boss follows the
+            format of a competitive reality show where a group of celebrity contestants live together in a specially constructed
+            house for a fixed duration of time, usually around three months.
+        </p>
+    </div>
+
+    <form action="connect.php" method>
+        <fieldset class="field">
+            <legend>
+                <h3>Admin Login</h3>
+            </legend>
+
+            <div class="headingsContainer">
+                <p>Sign in with your E-mail & Password</p>
+            </div>
+
+            <div class="mainContainer">
+
+                <!-- Username -->
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Enter your email" name="email" required>
+
+                <!-- Password -->
+                <label for="pswrd">Password</label>
+                <input type="password" placeholder="Enter your Password" name="pswrd">
+
+                <div class="subcontainer">
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <p class="forgotpsd"> <a href="forg.html">Forgot Password?</a></p>
+                </div>
+
+                <button type="submit" onclick="login()">Login</button>
+                <button type="reset">Reset</button>
+
+                <p class="register">Go Back? <a href="index.html">click here!</a></p>
+
+            </div>
+        </fieldset>
+    </form>
+
+
+    <footer>
+        <div class="footer">
+            <p>copyright &copy; <a href="#">Bigg Boss Voting Zone</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function login() {
+            var email = document.getElementsByName('email')[0].value;
+            var password = document.getElementsByName('pswrd')[0].value;
+    
+            // Admin 1
+            if (email === 'jasmeensingh@gmail.com' && password === '123456') {
+                alert('Login successful!');
+                location.href = 'admin.html'; // Changed from 'addmin.html' to 'admin.html'
+            } 
+            // Admin 2
+            else if (email === 'abc@gmail.com' && password === '123456') {
+                alert('Login successful!');
+                location.href = 'addmin.html';
+            }
+            else {
+                alert('Invalid email or password. Please try again.');
+            }
+        }
+    </script>
+    
+
+</body>
+
+</html>
