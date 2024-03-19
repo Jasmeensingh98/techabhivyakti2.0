@@ -65,8 +65,7 @@
             <p>copyright &copy; <a href="#">Bigg Boss Voting Zone</a></p>
         </div>
     </footer>
-
-    <script>
+<script>
         function login() {
             var email = document.getElementsByName('email')[0].value;
             var password = document.getElementsByName('pswrd')[0].value;
@@ -74,19 +73,18 @@
             // Admin 1
             if (email === 'jasmeensingh@gmail.com' && password === '123456') {
                 alert('Login successful!');
-                location.href = 'admin.html'; // Changed from 'addmin.html' to 'admin.html'
+                window.open('https://www.poll-maker.com/Dashboard#pg=editor&qp=pm5129835xdacb3B6B-155', '_blank'); // Open in a new tab
             } 
             // Admin 2
             else if (email === 'abc@gmail.com' && password === '123456') {
                 alert('Login successful!');
-                location.href = 'addmin.html';
+                window.open('https://www.poll-maker.com/Dashboard#pg=editor&qp=pm5129835xdacb3B6B-155', '_blank'); // Open in a new tab
             }
             else {
                 alert('Invalid email or password. Please try again.');
             }
         }
     </script>
-    
 
 </body>
 
