@@ -1504,15 +1504,10 @@ form:after{
      align-content: end;
 
 }
-.contact_us{
-    background:url(4535091.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 120px 0px;
-}
+
 
 .contact_inner{
-    background-color: #82e0ef;
+    background-color: #fff;
     position: relative;
     box-shadow: 20px 22px 44px #cccc;
     border-radius: 25px;
