@@ -1,0 +1,1 @@
+The BigBoss project is a collaborative website created for TechAbhivyakti 2.0 by me and my teammates. This project showcases our skills in web development and teamwork. Together, we built a feature-rich site, combining innovative ideas and technical expertise. It highlights our ability to work as a cohesive unit while delivering a professional and dynamic website.
